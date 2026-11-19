@@ -1,70 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fujiwara Tofu Shop & Touge Garage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minha primeira página no ar</title>
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <header class="topo">
-    <div class="marca">
-      <h1>藤原とうふ店 | Fujiwara Tofu & Garage</h1>
-      <p>Entregas na madrugada e preparação de rua desde 1995</p>
-    </div>
+  <h1>Minha primeira página no ar</h1>
+  <p>Feita em HTML, CSS e JavaScript.</p>
 
-    <div class="painel-status">
-      <span id="badge-status" class="status aberto">● Loja Aberta (Atendimento Normal)</span>
-      <button id="btn-turno" type="button">Alternar Turno</button>
-    </div>
-  </header>
-
-  <main class="container">
-    <section class="secao">
-      <h2>Catálogo de Produtos & Serviços</h2>
-      <p class="subtitulo">Itens carregados dinamicamente via Array + Laço no JavaScript</p>
-      <div id="lista-produtos" class="grid-produtos"></div>
-    </section>
-
-    <section class="secao">
-      <h2>Fazer Pedido / Agendar Preparação</h2>
-      <form id="form-pedido" novalidate>
-        <div class="campo">
-          <label for="cliente">Seu Nome ou Codinome:</label>
-          <input type="text" id="cliente" placeholder="Ex: Takumi / Matheus">
-        </div>
-
-        <div class="campo">
-          <label for="carro">Modelo do Carro (para entrega ou serviço):</label>
-          <input type="text" id="carro" placeholder="Ex: Civic LX 98, AE86, Chevette...">
-        </div>
-
-        <div class="campo">
-          <label for="item-escolhido">Item ou Serviço:</label>
-          <select id="item-escolhido"></select>
-        </div>
-
-        <div class="campo">
-          <label for="quantidade">Quantidade:</label>
-          <input type="text" id="quantidade" placeholder="Ex: 2">
-        </div>
-
-        <button type="submit" class="btn-enviar">Confirmar Pedido</button>
-        <p id="mensagem-validacao" class="msg-erro"></p>
-      </form>
-    </section>
-
-    <section class="secao">
-      <h2>Último Pedido Salvo (localStorage)</h2>
-      <div id="caixa-ultimo-pedido" class="card-salvo">
-        Nenhum pedido registrado ainda.
-      </div>
-    </section>
-  </main>
-
-  <footer class="rodape">
-    <p>Projeto Individual — Desenvolvido por Matheus Amaro</p>
-  </footer>
+  <p id="lampada" class="lampada">🌑</p>
+  <button id="interruptor" type="button">Ligar</button>
+  <p id="aviso">Luz apagada. Clique para acender.</p>
 
   <script src="script.js"></script>
 </body>
