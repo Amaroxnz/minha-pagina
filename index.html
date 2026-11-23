@@ -1,18 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Minha primeira página no ar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex F1 Garage — Paddock & Telemetria</title>
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-  <h1>Minha primeira página no ar</h1>
-  <p>Feita em HTML, CSS e JavaScript.</p>
+  <header class="topo">
+    <div class="marca">
+      <h1> APEX F1 GARAGE // Pit Wall & Upgrades</h1>
+      <p>Componentes aerodinâmicos, pneus e pacotes de telemetria para fim de semana de GP</p>
+    </div>
 
-  <p id="lampada" class="lampada">🌑</p>
-  <button id="interruptor" type="button">Ligar</button>
-  <p id="aviso">Luz apagada. Clique para acender.</p>
+    <div class="painel-status">
+      <span id="badge-status" class="status aberto">● Pit Lane Aberto (Bandeira Verde)</span>
+      <button id="btn-bandeira" type="button">Alternar Bandeira</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="secao">
+      <h2>Catálogo de Upgrades & Compostos</h2>
+      <p class="subtitulo">Itens carregados via Array + Laço no JavaScript</p>
+      <div id="lista-pecas" class="grid-produtos"></div>
+    </section>
+
+    <section class="secao">
+      <h2>Solicitar Upgrade para o Box</h2>
+      <form id="form-box" novalidate>
+        <div class="campo">
+          <label for="engenheiro">Nome do Engenheiro ou Piloto:</label>
+          <input type="text" id="engenheiro" placeholder="Ex: Matheus / Engenheiro de Pista">
+        </div>
+
+        <div class="campo">
+          <label for="carro">Número do Carro / Chassi:</label>
+          <input type="text" id="carro" placeholder="Ex: Carro #16 / AMR26">
+        </div>
+
+        <div class="campo">
+          <label for="peca-escolhida">Componente ou Jogo de Pneus:</label>
+          <select id="peca-escolhida"></select>
+        </div>
+
+        <div class="campo">
+          <label for="quantidade">Quantidade:</label>
+          <input type="text" id="quantidade" placeholder="Ex: 2">
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar Ordem ao Box</button>
+        <p id="mensagem-validacao" class="msg-erro"></p>
+      </form>
+    </section>
+
+    <section class="secao">
+      <h2>Última Ordem Registrada (localStorage)</h2>
+      <div id="caixa-ultima-ordem" class="card-salvo">
+        Nenhuma ordem enviada ao box ainda.
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Projeto Individual — Desenvolvido por Matheus Amaro</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
