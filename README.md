@@ -1,62 +1,59 @@
-# Minha Página
+# Apex F1 Garage
 
-Uma página web simples desenvolvida com HTML, CSS e JavaScript para demonstrar uma interação básica com o usuário: ligar e desligar uma lâmpada na interface.
-
-## Sobre o projeto
-
-Este projeto foi criado como um exemplo inicial de desenvolvimento frontend. Ao clicar no botão, o estado da lâmpada é alterado, a mensagem exibida na tela é atualizada e o tema da página muda entre os modos claro e escuro.
+Página web temática de Fórmula 1 para visualizar componentes e pneus de corrida e registrar solicitações de upgrades para o box. O projeto foi desenvolvido com HTML, CSS e JavaScript.
 
 ## Funcionalidades
 
-- Interface com tema escuro
-- Representação visual de uma lâmpada
-- Botão para ligar e desligar a luz
-- Mensagem de status indicando o estado atual
-- Alternância visual entre tema claro e escuro
-- Interação implementada com JavaScript
+- Catálogo de componentes e compostos de pneus, exibido dinamicamente na página.
+- Alternância entre os estados de **Bandeira Verde** (Pit Lane aberto) e **Bandeira Vermelha** (sessão interrompida), com atualização visual da interface.
+- Formulário para solicitar um componente, informando responsável, carro ou chassi e quantidade.
+- Validação dos campos obrigatórios e da quantidade informada.
+- Exibição da última ordem registrada, salva no `localStorage` do navegador.
+- Layout responsivo com tema escuro e identidade visual inspirada no automobilismo.
 
-## Tecnologias utilizadas
+## Tecnologias
 
-- HTML5
-- CSS3
-- JavaScript
+- **HTML5** — estrutura e conteúdo da página.
+- **CSS3** — estilos, layout e estados visuais.
+- **JavaScript** — catálogo dinâmico, interação, validação do formulário e armazenamento local.
 
 ## Como executar
 
-1. Faça o download ou clone este repositório:
+1. Clone o repositório:
 
    ```bash
    git clone https://github.com/Amaroxnz/minha-pagina.git
    ```
 
-2. Acesse a pasta do projeto:
+2. Abra a pasta do projeto:
 
    ```bash
    cd minha-pagina
    ```
 
-3. Abra o arquivo `index.html` em qualquer navegador moderno.
+3. Abra o arquivo `index.html` em um navegador moderno. Não é necessário instalar dependências ou iniciar um servidor.
 
-### Como usar
+## Como usar
 
-1. Clique no botão **Ligar**.
-2. Observe a lâmpada acender e o tema da página mudar.
-3. Clique no mesmo botão para desligar a lâmpada.
+1. Consulte os componentes e pneus disponíveis no catálogo.
+2. Use **Alternar Bandeira** para alternar entre bandeira verde e vermelha.
+3. Preencha o formulário com o responsável, o carro ou chassi, o item e a quantidade desejada.
+4. Clique em **Enviar Ordem ao Box**. A última ordem ficará visível na página e será salva no navegador.
 
 ## Estrutura do projeto
 
 ```text
 minha-pagina/
 ├── index.html    # Estrutura da página
-├── estilo.css    # Estilos e temas visuais
-├── script.js     # Lógica da interação
+├── estilo.css    # Estilos e layout
+├── script.js     # Catálogo, interações e lógica do formulário
 └── README.md     # Documentação do projeto
 ```
 
-## Objetivo
+## Armazenamento
 
-Este projeto serve como prática para iniciantes em desenvolvimento web que desejam aprender como estruturar uma página, aplicar estilos e manipular elementos e eventos com JavaScript.
+A última ordem é guardada no `localStorage` do navegador. Ela permanece disponível nesse mesmo navegador até que os dados locais sejam removidos ou substituídos por uma nova solicitação.
 
 ## Autor
 
-Projeto desenvolvido por [Amaroxnz](https://github.com/Amaroxnz).
+Desenvolvido por [Matheus Amaro](https://github.com/Amaroxnz).
